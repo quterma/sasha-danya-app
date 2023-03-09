@@ -17,14 +17,15 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "lint": "eslint --fix",
+    "pretty": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "eslint": "^8.35.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
@@ -62,5 +64,8 @@
       "npm run lint",
       "prettier --write"
     ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
